@@ -19,7 +19,7 @@
                $data=$_POST['data'];     
           }
 
-          echo $nom,$data;
+          echo 'Nom d¨usari:' . $nom .'<br>Data naixement: ' . $data . '<br>';
 
           $biorritmes= new biorritmes($data);
         
@@ -31,16 +31,16 @@
 
           echo '<br>El cicle físic és de ' . $cicle_fisic;
           echo '<br>El cicle emocional és de ' . $cicle_emocional;
-          echo '<br>El cicle intelectual és de ' . $cicle_intelectual;
+          echo '<br>El cicle intelectual és de ' . $cicle_intelectual . '<br>';
 
 
 ?>  
 
-<label for="file">Cicle Físic <?php echo ($cicle_fisic*100)?></label>
+<br><label for="file">Cicle Físic <?php echo ($cicle_fisic*100)?> %</label><br>
 <progress id="file" max="100" value='<?php echo abs($cicle_fisic*100)?>'></progress><br>
-<label for="file">Cicle Emocional <?php echo ($cicle_emocional*100)?></label>
+<label for="file">Cicle Emocional <?php echo ($cicle_emocional*100)?> %</label><br>
 <progress id="file" max="100" value='<?php echo abs($cicle_emocional*100)?>'></progress><br>
-<label for="file">Cicle Intelectual <?php echo ($cicle_intelectual*100)?></label>
+<label for="file">Cicle Intelectual <?php echo ($cicle_intelectual*100)?> %</label><br>
 <progress id="file" max="100" value='<?php echo abs($cicle_intelectual*100)?>'></progress><br>
 
 </body>

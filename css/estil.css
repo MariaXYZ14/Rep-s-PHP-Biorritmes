@@ -1,15 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+
 body{
-    background-color:rgb(185, 185, 233);
     
-    }
+    font-family:'Exo', sans-serif;
+    font-size: larger;
+    font-weight:bolder;
+    margin:30px;
+    background:linear-gradient(90deg, rgba(150,213,237,1) 19%, rgba(165,219,240,1) 27%, rgba(180,225,242,1) 44%, rgba(195,231,245,1) 58%, rgba(180,225,242,1) 77%, rgba(165,219,240,1) 85%, rgba(150,213,237,1) 93%);
     
-    div{
-        border:none;
-    }
+}
     
-    #footer{
-        width: 100%;
-        height: 81px;
-        position: absolute;
-        bottom:20px;
-    }
+div{
+    border:none;
+}
+
+label{
+    margin-top:3vh;
+}
+input{
+
+    border-radius:5%;
+    height:3vh;
+    margin-top:3vh;    
+    font-weight:bolder;
+}
+
+
+input:hover{
+
+    height:3.2vh;
+    background-color:rgb(204, 199, 199);
+}
+
+#enviar{
+   
+    height:3.5vh;
+    background-color: rgb(116, 202, 213);
+}
+
+#enviar:hover{
+   
+    height:3.7vh;
+    background-color: rgb(85, 162, 172);
+}
+
+#enviar:active {
+    background-color: rgb(48, 131, 142);
+    transform: translateY(2px);
+}
+
+progress{
+   
+    background:red;
+    border-radius:40%;
+}
