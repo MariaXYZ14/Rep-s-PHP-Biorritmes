@@ -12,19 +12,37 @@ body{
     
 }
     
-div{
-    border:none;
+#main{
+
+    background:linear-gradient(0deg, rgba(49,116,196,1) 1%, rgba(0,48,140,1) 93%);
+    height:12vw;
+    width:70vh;
+    border-radius:10px;
+    outline-style: groove;
+    outline-color: #020960;
+    border:solid #2d0888;
+    color:white;
+    
 }
 
-label{
-    margin-top:3vh;
+.elements{
+    
+    margin-left:2vw;
+
 }
+label{
+   
+    margin-top:3vh;
+
+}
+
 input{
 
     border-radius:5%;
     height:3vh;
     margin-top:3vh;    
     font-weight:bolder;
+
 }
 
 
@@ -32,23 +50,28 @@ input:hover{
 
     height:3.2vh;
     background-color:rgb(204, 199, 199);
+
 }
 
 #enviar{
    
-    height:3.5vh;
+    height:4vh;
     background-color: rgb(116, 202, 213);
+
 }
 
 #enviar:hover{
    
-    height:3.7vh;
+    height:4.5vh;
     background-color: rgb(85, 162, 172);
+
 }
 
 #enviar:active {
-    background-color: rgb(48, 131, 142);
+
+    background-color: rgb(116, 202, 213);
     transform: translateY(2px);
+
 }
 
 progress{
@@ -56,9 +79,11 @@ progress{
     height:2.5vh;
     -webkit-appearance: none;
     appearance: none;
+
 }
 
 progress[value]::-webkit-progress-value {
+
     background-image:
          -webkit-linear-gradient(-45deg, 
                                  transparent 33%, rgba(0, 0, 0, .1) 33%, 
@@ -71,6 +96,7 @@ progress[value]::-webkit-progress-value {
          border-radius: 2vh;
 
       background-size: 35px 20px, 100% 100%, 100% 100%;
+
   }
   
   ::-webkit-progress-bar {
@@ -81,6 +107,7 @@ progress[value]::-webkit-progress-value {
    } 
    
  .barraFisicaNegativa[value]::-webkit-progress-value,.barraEmocionalNegativa[value]::-webkit-progress-value,.barraIntelectualNegativa[value]::-webkit-progress-value {
+    
     background-image:
          -webkit-linear-gradient(-45deg, 
                                  transparent 33%, rgba(0, 0, 0, .1) 33%, 
@@ -93,6 +120,7 @@ progress[value]::-webkit-progress-value {
          border-radius: 2vh;
 
       background-size: 35px 20px, 100% 100%, 100% 100%;
+      
   }
 
  

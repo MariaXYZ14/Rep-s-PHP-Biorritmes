@@ -29,8 +29,6 @@
 
           $biorritmes= new biorritmes($data);
         
-          
-
           $cicle_fisic=$biorritmes->calcularFisic();
           $cicle_emocional=$biorritmes->calcularEmocional();
           $cicle_intelectual=$biorritmes->calcularIntelectual();

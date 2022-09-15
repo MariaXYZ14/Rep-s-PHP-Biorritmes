@@ -10,11 +10,12 @@
         $nom=null;
         ?>
         <p>La naturalesa i tot el que ella comprèn: clima, estacions, reproducció dels animals, collites, etc., es regeixen per cicles biològics o ritmes. Existeixen diferents bioritmes que afecten el nostre comportament en diferents maneres. S'ha comprovat estadísticament que l'energia física es comporta cíclicament en períodes de 23 dies, l'energia emotiva en períodes 28 dies i l'energia intel·lectual en 33 dies. Al moment de néixer, cada cicle comença des de zero i comença a pujar en una fase positiva, durant la qual les energies i les capacitats són altes.</p><br>
-        <p>Introdueix el teu nom i la teva data de naixement:</p>
-        <label>Nom: </label><input type="text" name="nom" value='<?php echo $nom?>' /><br>
-        <label>Edat: </label><input type="date" min="1926-04-21"  name="data" value='<?php echo $data?>' />
-        <input id="enviar" type="submit" />
-
+        <div id="main">
+        <p class="elements">Introdueix el teu nom i la teva data de naixement:</p>
+        <label class="elements">Nom: </label><input type="text" name="nom" value='<?php echo $nom?>' /><br>
+        <label class="elements">Edat: </label><input type="date" min="1926-04-21"  name="data" value='<?php echo $data?>' />
+        <input id="enviar" type="submit"/>
+        </div>
     </form>
    </head>
 </html>
