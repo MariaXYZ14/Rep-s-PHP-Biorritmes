@@ -51,7 +51,8 @@ input:hover{
 }
 
 progress{
-   
-    background:red;
+      
+   /*background:linear-gradient(90deg, rgba(142,196,49,1) 1%, rgba(88,140,0,1) 93%);*/
+    background-color:red;
     border-radius:40%;
-}
+    }
