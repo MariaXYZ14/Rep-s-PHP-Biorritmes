@@ -1,5 +1,6 @@
 <?php
 class Biorritmes{
+   
     private $data_naixement;
     private $cicle_fisic;
     private $cicle_emocional;
@@ -32,6 +33,7 @@ class Biorritmes{
     }
 
     function calcularEmocional(){
+        
         $diff=$this->calcular();
         $cicle_emocional=$diff/28;
         $arg2=2*pi()*$cicle_emocional;
@@ -41,6 +43,7 @@ class Biorritmes{
     }
 
     function calcularIntelectual(){
+      
         $diff=$this->calcular();
         $cicle_intelectual=$diff/33;
         $arg3=2*pi()*$cicle_intelectual;
