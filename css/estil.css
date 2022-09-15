@@ -51,8 +51,47 @@ input:hover{
 }
 
 progress{
-      
-   /*background:linear-gradient(90deg, rgba(142,196,49,1) 1%, rgba(88,140,0,1) 93%);*/
-    background-color:red;
-    border-radius:40%;
-    }
+
+    height:2.5vh;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+progress[value]::-webkit-progress-value {
+    background-image:
+         -webkit-linear-gradient(-45deg, 
+                                 transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                                 rgba(0,0, 0, .1) 66%, transparent 66%),
+         -webkit-linear-gradient(top, 
+                                 rgba(255, 255, 255, .25), 
+                                 rgba(0, 0, 0, .25)),
+         -webkit-linear-gradient(left, rgb(40, 83, 10), rgb(43, 173, 11));
+        
+         border-radius: 2vh;
+
+      background-size: 35px 20px, 100% 100%, 100% 100%;
+  }
+  
+  ::-webkit-progress-bar {
+    background-color: rgb(250, 248, 244);
+    border-radius: 2vh;
+
+ 
+   } 
+   
+ .barraFisicaNegativa[value]::-webkit-progress-value,.barraEmocionalNegativa[value]::-webkit-progress-value,.barraIntelectualNegativa[value]::-webkit-progress-value {
+    background-image:
+         -webkit-linear-gradient(-45deg, 
+                                 transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                                 rgba(0,0, 0, .1) 66%, transparent 66%),
+         -webkit-linear-gradient(top, 
+                                 rgba(255, 255, 255, .25), 
+                                 rgba(0, 0, 0, .25)),
+         -webkit-linear-gradient(left, rgb(178, 18, 18), rgb(207, 68, 9));
+        
+         border-radius: 2vh;
+
+      background-size: 35px 20px, 100% 100%, 100% 100%;
+  }
+
+ 
